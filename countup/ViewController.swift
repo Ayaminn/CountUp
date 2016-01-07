@@ -10,12 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    var countNum = 0
+    var countNum:Int = 0
     
     @IBOutlet weak var counter: UILabel!
 
     @IBAction func PushCountButton(sender: UIButton) {
-        countNum++
+        countNum += 1
         counter.text = String(countNum)
     }
     
@@ -27,6 +27,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        counter.text = "あいうえお"
     }
 
     override func didReceiveMemoryWarning() {
